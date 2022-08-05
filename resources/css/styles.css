@@ -1,0 +1,80 @@
+/* Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Charm:wght@400;700&family=Tangerine:wght@400;700&display=swap');
+
+.container {
+    height: 100vh;
+}
+
+.logo {
+    width: 200px;
+}
+
+.title-login h2 {
+    color: #a2ba0f;
+    /* font-family: 'Tangerine', cursive; */
+    font-family: 'Carattere', cursive;
+    font-size: 48px;
+}
+
+.title-login h3 {
+    color: #005744;
+    font-family: 'Charm', cursive;
+    /* font-family: 'Tangerine', cursive; */
+    margin-top: -22px;
+}
+
+.fa-file-invoice-dollar,
+.fa-filter-circle-dollar,
+.fa-book,
+.fa-user,
+.fa-unlock-keyhole,
+.fa-eye,
+.login-text {
+    color: #00765c;
+}
+
+#help_btn {
+    color: #00765c !important;
+    /*color: #a2ba0f !important;*/
+}
+
+.class_title {
+    cursor: help;
+}
+
+.class_title::after {
+    display: none;
+    content: attr(data-title);
+    color: white;
+    font-family: system-ui;
+    font-size: 0.85rem;
+    padding: 5px 8px;
+    background: rgba(0, 87, 68, .7);
+    border-radius: 5px;
+    position: absolute;
+    top: 28px;
+    left: -32px;
+    z-index: 1;
+    font-weight: normal;
+}
+
+.class_title:hover::after {
+    display: block;
+}
+
+.inputs-icon {
+    border-color: #00765c;
+    padding: 6px 40px;
+}
+
+.inputs-icon:focus {
+    border-color: #00765c47;
+    box-shadow: 0 0 4px 0.15rem rgb(0 118 92 / 25%);
+}
+
+#send_btn {
+    background: #a2ba1b;
+    color: #005744;
+}
