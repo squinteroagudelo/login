@@ -185,48 +185,6 @@ function handlerCarga() {
     }
 
     // Listening keyup event
-    /*document.getElementById('user').addEventListener('keyup', (e) => {
-        let el = e.target;
-        let value = el.value;
-        let exp = /^\d+$/;
-
-        if(value !== '') {
-            if (exp.test(value)) {
-                el.value = formatThousandsS(value);
-                el.ariaLabel = value;
-                document.getElementById('calculated').value = formatThousandsE(value / 30);
-            } else {
-                el.value = el.ariaLabel;
-            }
-        } else {
-            el.ariaLabel = value;
-            document.getElementById('calculated').value = formatThousandsE(0);
-        }
-    });*/
-
-    // Listening keyup event
-    /*document.getElementById('user').addEventListener('keyup', (e) => {
-        // Initialising aria-label attribute
-        if (e.target.value === '') e.target.ariaLabel = '';
-
-        // RegEx: only letters
-        let exp = /[a-zA-Z]/;
-
-        // Validating typed char
-        if (!exp.test(e.key)) {
-            e.target.ariaLabel += e.key;
-            e.target.ariaLabel = removeSpecialChars(e.target.ariaLabel);
-        } else {
-            if (e.key === 'Backspace' || e.key === 'Delete') {
-                e.target.ariaLabel = e.target.ariaLabel.slice(0, -1);
-            }
-        }
-
-        // Formatting input value and assigning clculated value
-        e.target.value = extendedFormatCurrency(Number(e.target.ariaLabel), 0);
-        document.getElementById('calculated').value = extendedFormatCurrency(e.target.ariaLabel / 30);
-    });*/
-
     document.getElementById('user').addEventListener('keyup', (e) => {
         let el = e.target;
         // Initialising aria-label attribute
